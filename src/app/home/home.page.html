@@ -7,9 +7,15 @@
       alt=""
     />
     <div id="button">
-      <button class="designbtn"  id="login">Login</button>
-      <button class="designbtn" id="registrer">Registrer</button>
-      <button class="designbtn" id="start">Start</button>
+      <button [routerLink]="['/login']" class="designbtn" id="login">
+        Login
+      </button>
+      <button [routerLink]="['/register']" class="designbtn" id="register">
+        Register
+      </button>
+      <button [routerLink]="['']" class="designbtn" id="start">
+        Start
+      </button>
     </div>
     <div id="image">
       <img
@@ -17,7 +23,6 @@
         src="https://media2.giphy.com/media/xULW8l2gXuRPmsQe8U/source.gif"
         alt=""
       />
-      
     </div>
   </div>
 </ion-content>
