@@ -1,9 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-back-button defaultHref="home"></ion-back-button>
+  <div id="form">
+    <div class="login-form">
+      <h1>Login</h1>
 
+      <div class="txtb">
+        <input class="" [(ngModel)]="inputEmail" type="text" id="login" />
+        <span data-placeholder="Username"></span>
+      </div>
+
+      <div class="txtb">
+        <input class="" type="password" id="password" />
+        <span data-placeholder="Password"></span>
+      </div>
+
+      <button class="logbtn">Login</button>
+
+      <div class="bottom-text">
+        Don't have account? <a [routerLink]="['/register']">Sign up</a>
+      </div>
+    </div>
+  </div>
 </ion-content>
