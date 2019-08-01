@@ -2,14 +2,22 @@
   <ion-back-button defaultHref="home"></ion-back-button>
   <div id="main">
     <div class="container">
-      <h1>Catégorie</h1>
+      <h1 id="cat_quest">Catégorie</h1>
 
-      <div id="question">Question</div>
+      <div id="question">{{ tableauGeneral[theme][rand].question }}</div>
 
-      <button class="btn">Réponse 1</button>
-      <button class="btn">Réponse 2</button>
-      <button class="btn">Réponse 3</button>
-      <button class="btn">Réponse 4</button>
+      <button class="btn" (click)="onReponseClick()">
+        {{ tableauGeneral[theme][rand].reponse1 }}
+      </button>
+      <button class="btn" (click)="onReponseClick()">
+        {{ tableauGeneral[theme][rand].reponse2 }}
+      </button>
+      <button class="btn" (click)="onReponseClick()">
+        {{ tableauGeneral[theme][rand].reponse3 }}
+      </button>
+      <button class="btn" (click)="onReponseClick()">
+        {{ tableauGeneral[theme][rand].reponse4 }}
+      </button>
     </div>
   </div>
 </ion-content>

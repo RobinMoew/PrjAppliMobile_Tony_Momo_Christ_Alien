@@ -4,25 +4,25 @@
     <div id="categories" class="container">
       <h1 id="title">Catégories</h1>
       <div id="buttons">
-        <button [routerLink]="['/questions']" id="html">
+        <button (click)="openQuizHtml()" id="html">
           <img
             src="https://pixees.fr/wp-content/uploads/2015/11/david_roche_dr_12-300x300.png"
             alt=""
           />
         </button>
-        <button id="js">
+        <button (click)="openQuizJs()" id="js">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
             alt=""
           />
         </button>
-        <button id="webstory">
+        <button (click)="openQuizWeb()" id="webstory">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/9/9c/GNOME_Web_logo.png"
             alt=""
           />
         </button>
-        <button id="php">
+        <button (click)="openQuizPhp()" id="php">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1280px-PHP-logo.svg.png"
             alt=""

@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.page.html',
-  styleUrls: ['./categories.page.scss'],
+  styleUrls: ['./categories.page.scss']
 })
 export class CategoriesPage implements OnInit {
+  constructor(public router: Router) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  openQuizHtml() {
+    this.router.navigateByUrl('/questions/html');
   }
-
+  openQuizJs() {
+    this.router.navigateByUrl('/questions/js');
+  }
+  openQuizWeb() {
+    this.router.navigateByUrl('/questions/web');
+  }
+  openQuizPhp() {
+    this.router.navigateByUrl('/questions/php');
+  }
 }
