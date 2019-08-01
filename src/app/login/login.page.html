@@ -1,7 +1,7 @@
 <ion-content>
   <ion-back-button defaultHref="home"></ion-back-button>
-  <div id="form">
-    <div class="login-form">
+  <div id="main">
+    <div class="container">
       <h1>Login</h1>
 
       <div class="txtb">
@@ -14,11 +14,9 @@
         <span data-placeholder="Password"></span>
       </div>
 
-      <button class="logbtn">Login</button>
+      <button class="btn">Login</button>
 
-      <div class="bottom-text">
-        Don't have account? <a [routerLink]="['/register']">Sign up</a>
-      </div>
+      <div class="bottom-text">Don't have account? <a [routerLink]="['/register']">Sign up</a></div>
     </div>
   </div>
 </ion-content>

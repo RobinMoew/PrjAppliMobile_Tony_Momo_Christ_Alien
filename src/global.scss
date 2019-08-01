@@ -39,7 +39,7 @@ ion-back-button {
   color: white !important;
 }
 
-#form {
+#main {
   height: 100%;
   background-image: linear-gradient(
     to left top,
@@ -51,7 +51,7 @@ ion-back-button {
   );
 }
 
-.login-form {
+.container {
   width: 80vw;
   background: #f1f1f1;
   height: 80vh;
@@ -63,7 +63,7 @@ ion-back-button {
   transform: translate(-50%, -50%);
 }
 
-.login-form h1 {
+.container h1 {
   text-align: center;
   margin-bottom: 60px;
   text-decoration: underline;
@@ -116,7 +116,7 @@ ion-back-button {
   width: 100%;
 }
 
-.logbtn {
+.btn {
   display: block;
   width: 100%;
   height: 50px;
@@ -130,7 +130,7 @@ ion-back-button {
   box-shadow: 2px 2px 10px 1px black;
 }
 
-.logbtn:hover {
+.btn:hover {
   background-position: right;
 }
 
