@@ -6,16 +6,16 @@
 
       <div id="question">{{ tableauGeneral[theme][rand].question }}</div>
 
-      <button class="btn" (click)="onReponseClick()">
+      <button class="btn" (click)="onReponseClick($event)">
         {{ tableauGeneral[theme][rand].reponse1 }}
       </button>
-      <button class="btn" (click)="onReponseClick()">
+      <button class="btn" (click)="onReponseClick($event)">
         {{ tableauGeneral[theme][rand].reponse2 }}
       </button>
-      <button class="btn" (click)="onReponseClick()">
+      <button class="btn" (click)="onReponseClick($event)">
         {{ tableauGeneral[theme][rand].reponse3 }}
       </button>
-      <button class="btn" (click)="onReponseClick()">
+      <button class="btn" (click)="onReponseClick($event)">
         {{ tableauGeneral[theme][rand].reponse4 }}
       </button>
     </div>

@@ -293,6 +293,8 @@ export class QuestionsPage implements OnInit {
 
   theme = 0;
   rand = 0;
+  nbQuestion = 5;
+  score = 0;
 
   getRandomTheme() {
     return this.tableauGeneral[Math.floor(Math.random() * this.tableauGeneral.length)];
@@ -341,7 +343,9 @@ export class QuestionsPage implements OnInit {
     }
   }
 
-  onReponseClick() {
+  onReponseClick($event: any) {
+    console.log($event.srcElement.innerHTML); // Valeur du bouton cliqué
+
     this.getRandomQuiz(this.theme);
   }
 }
