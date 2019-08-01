@@ -2,21 +2,21 @@
   <ion-back-button defaultHref="home"></ion-back-button>
   <div id="main">
     <div class="container">
-      <h1>Login</h1>
+      <h1>Se connecter</h1>
 
       <div class="txtb">
         <input class="" [(ngModel)]="inputEmail" type="text" id="login" />
-        <span data-placeholder="Username"></span>
+        <span data-placeholder="Identifiant"></span>
       </div>
 
       <div class="txtb">
         <input class="" type="password" id="password" />
-        <span data-placeholder="Password"></span>
+        <span data-placeholder="Mot de passe"></span>
       </div>
 
-      <button class="btn">Login</button>
+      <button class="btn">Se connecter</button>
 
-      <div class="bottom-text">Don't have account? <a [routerLink]="['/register']">Sign up</a></div>
+      <div class="bottom-text">Pas encore de compte? <br> Inscrivez-vous!<a [routerLink]="['/register']"> S'inscrire</a></div>
     </div>
   </div>
 </ion-content>
