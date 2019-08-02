@@ -365,6 +365,83 @@ export class QuestionsPage implements OnInit {
         reponse4: 'Le module racine',
         reponse: 'Le module racine'
       }
+    ],
+    [
+      {
+        question: 'Quel est le MMORPG le plus joué ?',
+        reponse1: 'Guild War',
+        reponse2: 'World of Warcraft',
+        reponse3: 'Final Fantasy XIV',
+        reponse4: 'Diablo',
+        reponse: 'Diablo'
+      },
+      {
+        question:
+          'Quelle chaîne de télévision est entièrement dédiée aux Geeks ?',
+        reponse1: 'NoLife',
+        reponse2: 'GameOne',
+        reponse3: 'Salut les Geeks',
+        reponse4: 'Canal +',
+        reponse: 'NoLife'
+      },
+      {
+        question:
+          'Comment sont surnommés les gens mettant des smiley partout ?',
+        reponse1: 'Les noobs',
+        reponse2: 'Les kikoos',
+        reponse3: 'Les no-life',
+        reponse4: 'Les politiques',
+        reponse: 'Les kikoos'
+      },
+      {
+        question: 'Quel est le jeu le plus joué au monde ?',
+        reponse1: 'League of Legends',
+        reponse2: 'Call of Duty',
+        reponse3: 'Battlefield',
+        reponse4: 'Darkest Dungeon',
+        reponse: 'League of Legends'
+      },
+
+      {
+        question: 'Quel est le support de jeu le plus utilisé ?',
+        reponse1: 'Playsation 3',
+        reponse2: 'PC',
+        reponse3: 'Xbox 360',
+        reponse4: 'Atari 2600',
+        reponse: 'PC'
+      },
+      {
+        question: "Comment s'appellent les séries difusées sur Internet ?",
+        reponse1: 'Podcasts',
+        reponse2: 'Webséries',
+        reponse3: 'Netséries',
+        reponse4: 'Tueurs en série',
+        reponse: 'Webséries'
+      },
+      {
+        question: 'Quelle est la plus connue parmis ces séries ?',
+        reponse1: 'Studio Bagel',
+        reponse2: 'Noob',
+        reponse3: 'Le visiteur du futur',
+        reponse4: 'Nerdz',
+        reponse: 'Noob'
+      },
+      {
+        question: 'Quelle était la première mascotte de Sega ?',
+        reponse1: 'Sonic',
+        reponse2: 'Knuckles',
+        reponse3: 'Alex Kid',
+        reponse4: 'Mario',
+        reponse: 'Alex Kid'
+      },
+      {
+        question: 'Quelle est la confiserie préféré de Sinok ?',
+        reponse1: 'Pastille Valda',
+        reponse2: 'Fraise Tagada',
+        reponse3: 'Chocolat',
+        reponse4: 'Chewing-Gum',
+        reponse: 'Chocolat'
+      }
     ]
   ];
 
