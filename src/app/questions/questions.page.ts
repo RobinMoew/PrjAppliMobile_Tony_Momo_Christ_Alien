@@ -52,7 +52,8 @@ export class QuestionsPage implements OnInit {
         reponse: 'Ordonner du contenu'
       },
       {
-        question: 'Lorsque vous utilisez l\'élément a, vous devez obligatoirement préciser...',
+        question:
+          "Lorsque vous utilisez l'élément a, vous devez obligatoirement préciser...",
         reponse1: 'Un attribut target',
         reponse2: 'Sa valeur',
         reponse3: 'Deux attributs href et target',
@@ -62,25 +63,26 @@ export class QuestionsPage implements OnInit {
       {
         question: 'Le séléecteur CSS étoile (*) sert à...',
         reponse1: 'Appliquer des bordures aux éléments',
-        reponse2: 'Sélectionner tous les éléments d\'une page HTML',
+        reponse2: "Sélectionner tous les éléments d'une page HTML",
         reponse3: 'Centrer le texte',
-        reponse4: 'Sélectionner un élément possédant un attribut en particulier',
-        reponse: 'Sélectionner tous les éléments d\'une page HTML'
+        reponse4:
+          'Sélectionner un élément possédant un attribut en particulier',
+        reponse: "Sélectionner tous les éléments d'une page HTML"
       },
       {
         question: 'Le sélecteur div + p sert à sélectionner...',
         reponse1: 'Tous les div qui contiennent un p',
-        reponse2: 'Le premier élément p enfant d\'un div',
+        reponse2: "Le premier élément p enfant d'un div",
         reponse3: 'Tous les éléments p enfants dans un div',
         reponse4: 'Tous les éléments p suivants un div (et de même niveau)',
         reponse: 'Tous les éléments p suivants un div (et de même niveau)'
       },
       {
-        question: 'Pourquoi utiliser des sprites d\'images ?',
+        question: "Pourquoi utiliser des sprites d'images ?",
         reponse1: 'Pour diminuer le nombre de requêtes envoyées au serveur',
         reponse2: 'Par simplicité pour insérer des images',
         reponse3: 'Car cela crée des images plus jolies',
-        reponse4: 'Parce que le Sprite c\'est bon',
+        reponse4: "Parce que le Sprite c'est bon",
         reponse: 'Pour diminuer le nombre de requêtes envoyées au serveur'
       }
     ],
@@ -119,7 +121,7 @@ export class QuestionsPage implements OnInit {
         reponse: 'Sera executée 4 fois'
       },
       {
-        question: 'Quelle fonction retire un élément de la fin d\'un tableau ?',
+        question: "Quelle fonction retire un élément de la fin d'un tableau ?",
         reponse1: 'array_splice()',
         reponse2: 'array_pop()',
         reponse3: 'array_pad()',
@@ -128,7 +130,7 @@ export class QuestionsPage implements OnInit {
       },
       {
         question:
-          'Quelle fonction permet d\'envoyer des en-têtes HTTP au navigateur avant le contenu de la page ?',
+          "Quelle fonction permet d'envoyer des en-têtes HTTP au navigateur avant le contenu de la page ?",
         reponse1: 'parse_url()',
         reponse2: 'http_post()',
         reponse3: 'header()',
@@ -146,7 +148,7 @@ export class QuestionsPage implements OnInit {
       {
         // tslint:disable-next-line: max-line-length
         question:
-          'Dans le cas d\'envoi d\'informations plus ou moins sensibles par formulaire, quelle méthode utilisera-t-on de préférence ?',
+          "Dans le cas d'envoi d'informations plus ou moins sensibles par formulaire, quelle méthode utilisera-t-on de préférence ?",
         reponse1: 'get',
         reponse2: 'mailto',
         reponse3: 'post',
@@ -156,7 +158,7 @@ export class QuestionsPage implements OnInit {
     ],
     [
       {
-        question: 'Quel est le nom de l\'institution où a été créé le web ?',
+        question: "Quel est le nom de l'institution où a été créé le web ?",
         reponse1: 'IRIS',
         reponse2: 'CIL',
         reponse3: 'CERN',
@@ -173,7 +175,7 @@ export class QuestionsPage implements OnInit {
       },
       {
         question:
-          'Comment se nomme le consortium qui s\'occupe d\'uniformiser les techniques du web ?',
+          "Comment se nomme le consortium qui s'occupe d'uniformiser les techniques du web ?",
         reponse1: 'WBA',
         reponse2: 'W3C',
         reponse3: 'WWF',
@@ -181,7 +183,8 @@ export class QuestionsPage implements OnInit {
         reponse: 'W3C'
       },
       {
-        question: 'Quel était le nom du plus célèbre moteur de recherche du début du web ?',
+        question:
+          'Quel était le nom du plus célèbre moteur de recherche du début du web ?',
         reponse1: 'Hasta la vista',
         reponse2: 'Alta Vista',
         reponse3: 'Lycos',
@@ -189,12 +192,12 @@ export class QuestionsPage implements OnInit {
         reponse: 'Yahoo'
       },
       {
-        question: 'Qu\'est-ce qu\'Internet ?',
-        reponse1: 'un réseau mondial d\'ordinateurs connectés',
+        question: "Qu'est-ce qu'Internet ?",
+        reponse1: "un réseau mondial d'ordinateurs connectés",
         reponse2: 'un disque dur',
         reponse3: 'un ensemble de pages contenant du texte et des images',
         reponse4: 'un moteur de recherche',
-        reponse: 'un réseau mondial d\'ordinateurs connectés'
+        reponse: "un réseau mondial d'ordinateurs connectés"
       },
       {
         question: 'WWW signifie',
@@ -206,7 +209,7 @@ export class QuestionsPage implements OnInit {
       },
       {
         question:
-          'Le logiciel permettant de consulter des pages Web sur votre ordinateur s\'appelle',
+          "Le logiciel permettant de consulter des pages Web sur votre ordinateur s'appelle",
         reponse1: 'un surfeur',
         reponse2: 'un serveur Web',
         reponse3: 'un navigateur',
@@ -214,9 +217,10 @@ export class QuestionsPage implements OnInit {
         reponse: 'un navigateur'
       },
       {
-        question: 'Dans une URL, la partie initialen par exemple "http://" désigne',
-        reponse1: 'l\'encodage',
-        reponse2: 'l\'amorce',
+        question:
+          'Dans une URL, la partie initialen par exemple "http://" désigne',
+        reponse1: "l'encodage",
+        reponse2: "l'amorce",
         reponse3: 'le protocole Web',
         reponse4: 'le nom de domaine',
         reponse: 'le protocole Web'
@@ -225,11 +229,11 @@ export class QuestionsPage implements OnInit {
     [
       {
         question: 'Java Script est un language qui :',
-        reponse1: 'Doit être compilié avant d\'être exécuté',
-        reponse2: 'S\'exécute sur le client',
-        reponse3: 'est un language dérivé de l\'ADA',
-        reponse4: 'S\'exécute sur le serveur',
-        reponse: 'S\'exécute sur le client'
+        reponse1: "Doit être compilié avant d'être exécuté",
+        reponse2: "S'exécute sur le client",
+        reponse3: "est un language dérivé de l'ADA",
+        reponse4: "S'exécute sur le serveur",
+        reponse: "S'exécute sur le client"
       },
       {
         question: 'Si ch1="ABCDE", que retourne ch1.charAt(3) :',
@@ -240,7 +244,7 @@ export class QuestionsPage implements OnInit {
         reponse: 'D'
       },
       {
-        question: 'Comment accéder au premier élément d\'un tableau T1 :',
+        question: "Comment accéder au premier élément d'un tableau T1 :",
         reponse1: 'T1(1)',
         reponse2: 'T1[1]',
         reponse3: 'T1(0)',
@@ -248,7 +252,7 @@ export class QuestionsPage implements OnInit {
         reponse: 'T1[0]'
       },
       {
-        question: 'Comment s\'ecrit Jquery en raccourci :',
+        question: "Comment s'ecrit Jquery en raccourci :",
         reponse1: '€',
         reponse2: '£',
         reponse3: '$',
@@ -256,7 +260,8 @@ export class QuestionsPage implements OnInit {
         reponse: '$'
       },
       {
-        question: 'Comment peut-on sélectionner les images d\'une largeur de 300px ?',
+        question:
+          "Comment peut-on sélectionner les images d'une largeur de 300px ?",
         reponse1: '$("img[width=300px]")',
         reponse2: '$("img[width=300]");',
         reponse3: '$("img").width("300");',
@@ -264,7 +269,8 @@ export class QuestionsPage implements OnInit {
         reponse: '$("img[width=300]");'
       },
       {
-        question: 'Comment peut-on sélectionner les deux premiers titres h3 d\'une page ?',
+        question:
+          "Comment peut-on sélectionner les deux premiers titres h3 d'une page ?",
         reponse1: '$("h3+h3")',
         reponse2: '$("h3(1,2)")',
         reponse3: '$("h3:lt(2)");',
@@ -272,7 +278,7 @@ export class QuestionsPage implements OnInit {
         reponse: '$("h3:lt(2)");'
       },
       {
-        question: 'Comment peut-on empécher l\'exécution d\'un lien cliqué ?',
+        question: "Comment peut-on empécher l'exécution d'un lien cliqué ?",
         reponse1: '$("a").click(function() { exit; });',
         reponse2: '$("a").click(function() { return true; });',
         reponse3: '$("a").click(function(e) { e.preventDefault; });',
@@ -281,7 +287,7 @@ export class QuestionsPage implements OnInit {
       },
       {
         question:
-          'Comment peut-on ajouter la classe .actif sur un élément <li> si celle-ci n\'est pas présente : ',
+          "Comment peut-on ajouter la classe .actif sur un élément <li> si celle-ci n'est pas présente : ",
         reponse1: '$("li").addClass(.actif);',
         reponse2: '$("li").addClass(".actif");',
         reponse3: '$("li!actif").addClass("actif");',
@@ -297,7 +303,9 @@ export class QuestionsPage implements OnInit {
   score = 0;
 
   getRandomTheme() {
-    return this.tableauGeneral[Math.floor(Math.random() * this.tableauGeneral.length)];
+    return this.tableauGeneral[
+      Math.floor(Math.random() * this.tableauGeneral.length)
+    ];
   }
 
   getRandomThemeId() {
@@ -344,8 +352,18 @@ export class QuestionsPage implements OnInit {
   }
 
   onReponseClick($event: any) {
-    console.log($event.srcElement.innerHTML); // Valeur du bouton cliqué
+    let clique = $event.srcElement.innerHTML; // Valeur du bouton cliqué
+    let bonnereponse = this.tableauGeneral[this.theme][this.rand].reponse;
+    let totalresultat=0;
 
+    if (clique === bonnereponse) {
+    totalresultat=this.score+this.score;
+      this.score += 1;
+    } else {
+      this.score += 0;
+    }
+
+    console.log(this.score);
     this.getRandomQuiz(this.theme);
   }
 }
