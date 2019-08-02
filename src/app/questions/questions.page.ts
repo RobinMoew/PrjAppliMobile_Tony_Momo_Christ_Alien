@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as $ from 'jquery';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-questions',
@@ -8,7 +9,11 @@ import * as $ from 'jquery';
   styleUrls: ['./questions.page.scss']
 })
 export class QuestionsPage implements OnInit {
-  constructor(public router: ActivatedRoute) {}
+  constructor(
+    public router: ActivatedRoute,
+    public navCtrl: NavController,
+    public route: Router
+  ) {}
   tableauGeneral = [
     [
       {
@@ -37,11 +42,11 @@ export class QuestionsPage implements OnInit {
       },
       {
         question: 'Que signifie CSS ?',
-        reponse1: 'Cascading style shett',
+        reponse1: 'Cascading style sheets',
         reponse2: 'créer serveur sympa',
         reponse3: 'Choucroute saucisse savoyarde',
         reponse4: 'create simple sample',
-        reponse: 'Cascading style shett'
+        reponse: 'Cascading style sheets'
       },
       {
         question: 'Le rôle du HTML est de...',
@@ -352,18 +357,19 @@ export class QuestionsPage implements OnInit {
   }
 
   onReponseClick($event: any) {
-    let clique = $event.srcElement.innerHTML; // Valeur du bouton cliqué
-    let bonnereponse = this.tableauGeneral[this.theme][this.rand].reponse;
-    let totalresultat=0;
+    const reponse = $event.srcElement.innerHTML; // Valeur du bouton cliqué
+    const trueRep = this.tableauGeneral[this.theme][this.rand].reponse;
+    if (this.nbQuestion > 1) {
+      if (reponse === trueRep) {
+        this.score += 1;
+      } else {
+        this.score += 0;
+      }
 
-    if (clique === bonnereponse) {
-    totalresultat=this.score+this.score;
-      this.score += 1;
+      this.nbQuestion--;
+      this.getRandomQuiz(this.theme);
     } else {
-      this.score += 0;
+      this.route.navigateByUrl('/resultat/' + this.score);
     }
-
-    console.log(this.score);
-    this.getRandomQuiz(this.theme);
   }
 }
