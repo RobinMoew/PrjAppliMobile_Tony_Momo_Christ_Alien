@@ -23,4 +23,7 @@ export class CategoriesPage implements OnInit {
   openQuizPhp() {
     this.router.navigateByUrl('/questions/php');
   }
+  openQuizAngular() {
+    this.router.navigateByUrl('/questions/angular');
+  }
 }

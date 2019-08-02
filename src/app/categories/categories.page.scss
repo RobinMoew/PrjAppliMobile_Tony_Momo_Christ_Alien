@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  overflow: scroll;
+  height: 60vh;
 }
 
 button {
@@ -10,7 +12,7 @@ button {
   border: none;
   height: 30vw;
   width: 30vw;
-  margin: 2rem .8rem;
+  margin: 2rem 0.8rem;
   outline: none;
 }
 
