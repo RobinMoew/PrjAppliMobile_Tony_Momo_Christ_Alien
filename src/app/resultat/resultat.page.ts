@@ -29,4 +29,8 @@ export class ResultatPage implements OnInit {
       d_bg.addClass('bg_loose');
     }
   }
+
+  return() {
+    $('.container').removeClass('bg_won bg_med bg_loose');
+  }
 }

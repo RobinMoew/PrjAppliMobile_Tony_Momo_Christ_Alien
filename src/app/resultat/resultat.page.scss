@@ -1,5 +1,6 @@
 #main {
   text-align: center;
+
 }
 
 #txt_score {
@@ -22,4 +23,16 @@
 #score span {
   margin: 2rem 0;
   font-size: 4rem;
+}
+.btn{
+
+
+  margin-top: -20vw;
+  width: 40vw;
+
+}
+#button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
