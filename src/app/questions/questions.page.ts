@@ -532,7 +532,6 @@ export class QuestionsPage implements OnInit {
     if (this.nbQuestion < 5) {
       this.nbQuestion++;
       this.getRandomQuiz(this.theme);
-      // tslint:disable-next-line: prefer-for-of
     } else {
       this.route.navigateByUrl("/resultat/" + this.score);
     }
