@@ -436,7 +436,6 @@ export class QuestionsPage implements OnInit {
 
     if (this.nbQuestion < 5) {
       this.nbQuestion++;
-
       // tslint:disable-next-line: prefer-for-of
       for (let i = 0; i < this.randoms.length; i++) {
         if (this.randoms[i] === this.rand) {
