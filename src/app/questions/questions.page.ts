@@ -521,6 +521,8 @@ export class QuestionsPage implements OnInit {
       for (let i = 0; i < this.randoms.length; i++) {
         if (this.randoms[i] === this.rand) {
           this.getRandomQuiz(this.theme);
+          console.log(this.rand);
+          console.log(this.randoms);
         }
       }
     } else {
