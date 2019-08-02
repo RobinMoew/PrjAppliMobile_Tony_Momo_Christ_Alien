@@ -283,10 +283,10 @@ export class QuestionsPage implements OnInit {
         question:
           'Comment peut-on ajouter la classe .actif sur un élément <li> si celle-ci n\'est pas présente : ',
         reponse1: '$("li").addClass(.actif);',
-        reponse2: '$("li").addClass(".actif");',
+        reponse2: '$("li").addClass("actif");',
         reponse3: '$("li!actif").addClass("actif");',
         reponse4: '$("li").toggleClass("actif");',
-        reponse: '$("li").toggleClass("actif");'
+        reponse: '$("li").addClass("actif");'
       }
     ]
   ];
@@ -337,7 +337,6 @@ export class QuestionsPage implements OnInit {
         titre.html(`PHP`);
         this.getRandomQuiz(1);
         break;
-
       default:
         break;
     }
