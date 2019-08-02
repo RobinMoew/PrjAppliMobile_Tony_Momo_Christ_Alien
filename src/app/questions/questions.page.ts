@@ -420,6 +420,7 @@ export class QuestionsPage implements OnInit {
       case 'angular':
         titre.html(`Angular`);
         this.getRandomQuiz(4);
+        break;
       default:
         break;
     }
