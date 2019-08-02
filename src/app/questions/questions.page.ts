@@ -17,7 +17,7 @@ export class QuestionsPage implements OnInit {
   tableauGeneral = [
     [
       {
-        question: 'Selectionner la balise orpheline :',
+        question: 'Selectionner la balise orpheline:',
         reponse1: '<img>',
         reponse2: '<h1>',
         reponse3: '<div>',
@@ -25,7 +25,7 @@ export class QuestionsPage implements OnInit {
         reponse: '<img>'
       },
       {
-        question: 'Selectionner la bonne syntaxe HTML :',
+        question: 'Selectionner la bonne syntaxe HTML:',
         reponse1: '<p>Je suis un paragraphe<p>',
         reponse2: '<img src=monImage.png"></img>',
         reponse3: '<h1>Je suis un titre</h1>',
@@ -49,7 +49,7 @@ export class QuestionsPage implements OnInit {
         reponse: 'Cascading Style Sheets'
       },
       {
-        question: 'Le rôle du HTML est de...',
+        question: 'Le rôle du HTML est de:',
         reponse1: 'Mettre en forme du texte',
         reponse2: 'Styliser la page web',
         reponse3: 'Créer des sites e-commerce',
@@ -58,7 +58,7 @@ export class QuestionsPage implements OnInit {
       },
       {
         question:
-          "Lorsque vous utilisez l'élément <a>, vous devez obligatoirement préciser...",
+          "Lorsque vous utilisez l'élément <a>, vous devez obligatoirement préciser:",
         reponse1: 'Un attribut target',
         reponse2: 'Sa valeur',
         reponse3: 'Les attributs href et target',
@@ -66,7 +66,7 @@ export class QuestionsPage implements OnInit {
         reponse: 'Un attribut href'
       },
       {
-        question: 'Le sélecteur CSS étoile (*) sert à...',
+        question: 'Le sélecteur CSS étoile (*) sert à:',
         reponse1: 'Appliquer des bordures aux éléments',
         reponse2: "Sélectionner tous les éléments d'une page HTML",
         reponse3: 'Centrer le texte',
@@ -75,7 +75,7 @@ export class QuestionsPage implements OnInit {
         reponse: "Sélectionner tous les éléments d'une page HTML"
       },
       {
-        question: 'Le sélecteur "div + p" sert à sélectionner...',
+        question: 'Le sélecteur "div + p" sert à sélectionner:',
         reponse1: 'Toute les div qui contiennent un p',
         reponse2: "Le premier élément <p> enfant d'une div",
         reponse3: 'Tous les éléments <p> enfants dans un div',
@@ -119,7 +119,7 @@ export class QuestionsPage implements OnInit {
         reponse: 'time'
       },
       {
-        question: 'La boucle for ($i=0 ; $i<=3 ; $i++){ echo $i;}',
+        question: 'La boucle for ($i=0 ; $i<=3 ; $i++){ echo $i;}:',
         reponse1: 'Sera executée 2 fois',
         reponse2: 'Sera executée 3 fois',
         reponse3: 'Sera executée 4 fois',
@@ -206,7 +206,7 @@ export class QuestionsPage implements OnInit {
         reponse: "Un réseau mondial d'ordinateurs connectés"
       },
       {
-        question: 'WWW signifie',
+        question: 'WWW signifie:',
         reponse1: 'Wild Wide World',
         reponse2: 'World Wide Web',
         reponse3: 'Wide World Web',
@@ -215,7 +215,7 @@ export class QuestionsPage implements OnInit {
       },
       {
         question:
-          "Le logiciel permettant de consulter des pages Web sur votre ordinateur s'appelle",
+          "Le logiciel permettant de consulter des pages Web sur votre ordinateur s'appelle:",
         reponse1: 'Un surfeur Web',
         reponse2: 'Un serveur Web',
         reponse3: 'Un navigateur Web',
@@ -224,7 +224,7 @@ export class QuestionsPage implements OnInit {
       },
       {
         question:
-          'Dans une URL, la partie initiale par exemple "http://" désigne',
+          'Dans une URL, la partie initiale par exemple "http://" désigne:',
         reponse1: "L'encodage",
         reponse2: "L'amorce",
         reponse3: 'Le protocole Web',
@@ -234,7 +234,7 @@ export class QuestionsPage implements OnInit {
     ],
     [
       {
-        question: 'Java Script est un language qui :',
+        question: 'Java Script est un language qui:',
         reponse1: "Doit être compilé avant d'être exécuté",
         reponse2: "S'exécute côté client",
         reponse3: "Est un language dérivé de l'ADA",
@@ -242,7 +242,7 @@ export class QuestionsPage implements OnInit {
         reponse: "S'exécute côté client"
       },
       {
-        question: 'Si ch1="ABCDE", que retourne ch1.charAt(3) :',
+        question: 'Si ch1="ABCDE", que retourne ch1.charAt(3) ?',
         reponse1: 'Une erreur',
         reponse2: 'True',
         reponse3: 'D',
@@ -250,7 +250,7 @@ export class QuestionsPage implements OnInit {
         reponse: 'D'
       },
       {
-        question: "Comment accéder au premier élément d'un tableau T1 :",
+        question: "Comment accéder au premier élément d'un tableau T1 ?",
         reponse1: 'T1(1)',
         reponse2: 'T1[1]',
         reponse3: 'T1(0)',
@@ -258,7 +258,7 @@ export class QuestionsPage implements OnInit {
         reponse: 'T1[0]'
       },
       {
-        question: "Comment s'ecrit jQuery en raccourci :",
+        question: "Comment s'ecrit jQuery en raccourci ?",
         reponse1: '€',
         reponse2: '£',
         reponse3: '$',
@@ -280,7 +280,7 @@ export class QuestionsPage implements OnInit {
         reponse1: '$("h3+h3")',
         reponse2: '$("h3(1,2)")',
         reponse3: '$("h3:lt(2)");',
-        reponse4: '$("h3 :slice(0,2)")',
+        reponse4: '$("h3:slice(0,2)")',
         reponse: '$("h3:lt(2)");'
       },
       {
@@ -293,7 +293,7 @@ export class QuestionsPage implements OnInit {
       },
       {
         question:
-          "Comment peut-on ajouter la classe .actif sur un élément <li> si celle-ci n'est pas présente : ",
+          'Comment peut-on ajouter la classe ".actif" sur un élément <li> si celle-ci n\'est pas présente ?',
         reponse1: '$("li").addClass(.actif);',
         reponse2: '$("li").addClass(".actif");',
         reponse3: '$("li!actif").addClass("actif");',
