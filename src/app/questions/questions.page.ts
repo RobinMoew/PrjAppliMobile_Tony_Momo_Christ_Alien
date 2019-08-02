@@ -411,7 +411,7 @@ export class QuestionsPage implements OnInit {
         reponse: 'PC'
       },
       {
-        question: "Comment s'appellent les séries difusées sur Internet ?",
+        question: 'Comment s\'appellent les séries difusées sur Internet ?',
         reponse1: 'Podcasts',
         reponse2: 'Webséries',
         reponse3: 'Netséries',
