@@ -1,0 +1,25 @@
+#main {
+  text-align: center;
+}
+
+#txt_score {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.container {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#score {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#score span {
+  margin: 2rem 0;
+  font-size: 4rem;
+}
