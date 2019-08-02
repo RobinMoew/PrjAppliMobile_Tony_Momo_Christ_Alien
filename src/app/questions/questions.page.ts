@@ -37,11 +37,11 @@ export class QuestionsPage implements OnInit {
       },
       {
         question: 'Que signifie CSS ?',
-        reponse1: 'Cascading style shett',
+        reponse1: 'Cascading style sheets',
         reponse2: 'créer serveur sympa',
         reponse3: 'Choucroute saucisse savoyarde',
         reponse4: 'create simple sample',
-        reponse: 'Cascading style shett'
+        reponse: 'Cascading style sheets'
       },
       {
         question: 'Le rôle du HTML est de...',
@@ -344,7 +344,13 @@ export class QuestionsPage implements OnInit {
   }
 
   onReponseClick($event: any) {
-    console.log($event.srcElement.innerHTML); // Valeur du bouton cliqué
+    const reponse = $event.srcElement.innerHTML; // Valeur du bouton cliqué
+    const trueRep = this.tableauGeneral[this.theme][this.rand].reponse;
+    if (reponse === trueRep) {
+      this.score += 1;
+    } else {
+      this.score += 0;
+    }
 
     this.getRandomQuiz(this.theme);
   }
