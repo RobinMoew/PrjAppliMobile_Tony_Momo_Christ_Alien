@@ -461,7 +461,7 @@ export class QuestionsPage implements OnInit {
     return Math.floor(Math.random() * this.tableauGeneral.length);
   } */
 
-  getRandomQuestionId(theme: any) {
+  getRandomQuestionId(theme: Array<object>) {
     return Math.floor(Math.random() * theme.length);
   }
 

@@ -29,4 +29,5 @@ export class CategoriesPage implements OnInit {
   openQuizSinok() {
     this.router.navigateByUrl('/questions/sinok');
   }
+ 
 }

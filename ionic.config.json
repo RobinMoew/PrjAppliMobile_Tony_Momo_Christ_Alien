@@ -1,5 +1,7 @@
 {
   "name": "PrjAppliMobile_Tony_Momo_Christ_Alien",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

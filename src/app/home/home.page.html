@@ -1,4 +1,5 @@
 <ion-content scrollY="false">
+  <audio loop autoplay src="../../assets/audio/2_100bpm.wav"></audio>
   <div id="parent">
     <h1 id="title">Quizz Web</h1>
     <img
@@ -8,17 +9,22 @@
     />
     <div id="button">
       <button [routerLink]="['/login']" class="designbtn" id="login">
-       Se connecter
+        Se connecter
       </button>
       <button [routerLink]="['/register']" class="designbtn" id="register">
-       S'inscrire
+        S'inscrire
       </button>
       <button [routerLink]="['/categories']" class="designbtn" id="start">
         Commencer
       </button>
     </div>
+
     <div id="image">
-      <img class="font" src="https://media2.giphy.com/media/xULW8l2gXuRPmsQe8U/source.gif" alt="" />
+      <img
+        class="font"
+        src="https://media2.giphy.com/media/xULW8l2gXuRPmsQe8U/source.gif"
+        alt=""
+      />
     </div>
   </div>
 </ion-content>
