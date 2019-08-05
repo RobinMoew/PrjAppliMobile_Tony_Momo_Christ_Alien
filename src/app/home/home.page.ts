@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 export class HomePage {
   constructor() {}
 
-  ngOnInit() {
+  ionViewDidEnter() {
     let son = $('audio');
     let start = $('#start');
 
