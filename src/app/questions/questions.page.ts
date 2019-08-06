@@ -50,10 +50,10 @@ export class QuestionsPage implements OnInit {
       },
       {
         question: 'Le rôle du HTML est de:',
-        reponse4: 'Naviguer sur internet',
-        reponse2: 'Styliser la page web',
         reponse1: 'Structurer la page web',
+        reponse2: 'Styliser la page web',
         reponse3: 'Créer des sites e-commerce',
+        reponse4: 'Naviguer sur internet',
         reponse: 'Structurer la page web'
       },
       {
@@ -489,18 +489,18 @@ export class QuestionsPage implements OnInit {
 
   timer() {
     let interval = setInterval(() => {
-      this.value -= 0.1;
-      if (this.value <= 0.1) {
+      this.value -= 0.0005;
+      if (this.value <= 0.001) {
         this.value = 1;
         if (this.nbQuestion < 5) {
           this.nbQuestion++;
           this.getRandomQuiz(this.theme);
         } else {
-          this.route.navigateByUrl('/resultat/' + this.score);
           clearInterval(interval);
+          this.route.navigateByUrl('/resultat/' + this.score);
         }
       }
-    }, 1000);
+    }, 10);
   }
 
   ngOnInit() {
