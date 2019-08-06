@@ -26,7 +26,12 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.7.1",
     "@types/jquery": "^3.3.30",
+<<<<<<< HEAD
     "cordova-android": "^8.0.0",
+=======
+    "bootstrap": "^4.3.1",
+    "cordova-android": "8.0.0",
+>>>>>>> 8ede2ab2b0f091e1efb70578224bf1a75ebe1735
     "cordova-plugin-music-controls": "^2.2.0",
     "cordova-plugin-nativeaudio": "^3.0.9",
     "core-js": "^2.5.4",

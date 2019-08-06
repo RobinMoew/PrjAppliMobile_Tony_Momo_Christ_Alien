@@ -1,16 +1,28 @@
 <ion-content>
   <ion-back-button defaultHref="home"></ion-back-button>
   <div id="main">
-     
+    <ion-progress-bar color="danger" value="{{ value }}"></ion-progress-bar>
     <div class="container">
+
       <h1 id="cat_quest">Catégorie</h1>
 
-      <div id="question">{{ this.tableauGeneral[this.themeId][this.rand].question }}</div>
+      <div id="question">
+        {{ this.tableauGeneral[this.themeId][this.rand].question }}
+      </div>
 
-      <button class="btn" (click)="onReponseClick($event)">{{ this.tableauGeneral[this.themeId][this.rand].reponse1 }}</button>
-      <button class="btn" (click)="onReponseClick($event)">{{ this.tableauGeneral[this.themeId][this.rand].reponse2 }}</button>
-      <button class="btn" (click)="onReponseClick($event)">{{ this.tableauGeneral[this.themeId][this.rand].reponse3 }}</button>
-      <button class="btn" (click)="onReponseClick($event)">{{ this.tableauGeneral[this.themeId][this.rand].reponse4 }}</button>
+      <button class="btn" (click)="onReponseClick($event)">
+        {{ this.tableauGeneral[this.themeId][this.rand].reponse1 }}
+      </button>
+      <button class="btn" (click)="onReponseClick($event)">
+        {{ this.tableauGeneral[this.themeId][this.rand].reponse2 }}
+      </button>
+      <button class="btn" (click)="onReponseClick($event)">
+        {{ this.tableauGeneral[this.themeId][this.rand].reponse3 }}
+      </button>
+      <button class="btn" (click)="onReponseClick($event)">
+        {{ this.tableauGeneral[this.themeId][this.rand].reponse4 }}
+      </button>
     </div>
+    <timer></timer>
   </div>
 </ion-content>
