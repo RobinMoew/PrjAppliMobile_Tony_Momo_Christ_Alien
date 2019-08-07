@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import * as $ from 'jquery';
-import { NavController } from '@ionic/angular';
-import { interval } from 'rxjs';
+import { Component, OnInit } from "@angular/core";
+import { Router, ActivatedRoute } from "@angular/router";
+import * as $ from "jquery";
+import { NavController } from "@ionic/angular";
+import { interval } from "rxjs";
 
 @Component({
-  selector: 'app-questions',
-  templateUrl: './questions.page.html',
-  styleUrls: ['./questions.page.scss']
+  selector: "app-questions",
+  templateUrl: "./questions.page.html",
+  styleUrls: ["./questions.page.scss"]
 })
 export class QuestionsPage implements OnInit {
   constructor(
@@ -71,7 +71,7 @@ export class QuestionsPage implements OnInit {
           this.getRandomQuiz(this.theme);
         } else {
           clearInterval(this.interval);
-          this.route.navigateByUrl('/resultat/' + this.score);
+          this.route.navigateByUrl("/resultat/" + this.score);
         }
       }
     }, 10);
@@ -80,7 +80,7 @@ export class QuestionsPage implements OnInit {
   recupDataJson() {
     let context = this;
     $.ajax({
-      url: '../../assets/themes.json',
+      url: "../../assets/themes.json",
       success: function success(result) {
         context.startQuizz(result);
       },
@@ -91,44 +91,48 @@ export class QuestionsPage implements OnInit {
   }
 
   startQuizz(themes) {
-    this.tableauGeneral = themes;
+    if (typeof themes == "string") {
+      this.tableauGeneral = JSON.parse(themes);
+    } else {
+      this.tableauGeneral = themes;
+    }
 
-    const themeName = this.router.snapshot.paramMap.get('theme');
-    const titre = $('#cat_quest');
+    const themeName = this.router.snapshot.paramMap.get("theme");
+    const titre = $("#cat_quest");
     this.timer();
 
     switch (themeName) {
-      case 'html':
+      case "html":
         titre.html(`HTML / CSS`);
         this.theme = this.tableauGeneral[0];
         this.themeId = 0;
         this.getRandomQuiz(this.theme);
         break;
-      case 'php':
+      case "php":
         titre.html(`PHP`);
         this.theme = this.tableauGeneral[1];
         this.themeId = 1;
         this.getRandomQuiz(this.theme);
         break;
-      case 'web':
+      case "web":
         titre.html(`Histoire du Web`);
         this.theme = this.tableauGeneral[2];
         this.themeId = 2;
         this.getRandomQuiz(this.theme);
         break;
-      case 'js':
+      case "js":
         titre.html(`JavaScript`);
         this.theme = this.tableauGeneral[3];
         this.themeId = 3;
         this.getRandomQuiz(this.theme);
         break;
-      case 'angular':
+      case "angular":
         titre.html(`Angular`);
         this.theme = this.tableauGeneral[4];
         this.themeId = 4;
         this.getRandomQuiz(this.theme);
         break;
-      case 'sinok':
+      case "sinok":
         titre.html(`Geek`);
         this.theme = this.tableauGeneral[5];
         this.themeId = 5;
@@ -161,7 +165,7 @@ export class QuestionsPage implements OnInit {
       this.nbQuestion++;
       this.getRandomQuiz(this.theme);
     } else {
-      this.route.navigateByUrl('/resultat/' + this.score);
+      this.route.navigateByUrl("/resultat/" + this.score);
     }
 
     if (this.nbQuestion == 5) {
