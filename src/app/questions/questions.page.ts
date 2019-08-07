@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as $ from 'jquery';
 import { NavController } from '@ionic/angular';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-questions',
@@ -561,6 +562,7 @@ export class QuestionsPage implements OnInit {
     }
 
     if (this.nbQuestion < 5) {
+      
       this.nbQuestion++;
       this.getRandomQuiz(this.theme);
     } else {
