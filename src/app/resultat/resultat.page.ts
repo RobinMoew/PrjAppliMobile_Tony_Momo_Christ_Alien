@@ -22,9 +22,9 @@ export class ResultatPage implements OnInit {
       d_score.css('color', '#00ac00');
       d_bg.addClass('bg_won');
     } else if (this.score === 3) {
-      d_score.css('color', 'orange');
+      d_score.css('color', 'black');
       d_bg.addClass('bg_med');
-    } else {
+    } else if (this.score < 3) {
       d_score.css('color', 'red');
       d_bg.addClass('bg_loose');
     }
