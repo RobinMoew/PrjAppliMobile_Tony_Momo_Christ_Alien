@@ -403,5 +403,532 @@
       "reponse4": "Chewing-Gum",
       "reponse": "Chocolat"
     }
+  ],
+  [
+    {
+      "question": "A quel nombre décimal est égal à 3/6 + 6/3 ?",
+      "reponse1": "2.5",
+      "reponse2": "3.5",
+      "reponse3": "4.5",
+      "reponse4": "5.5",
+      "reponse": "2.5"
+    },
+    {
+      "question": "Lequel de ces angles est plus petit qu'un angle droit ?",
+      "reponse1": "Un angle plat",
+      "reponse2": "Un angle aïgu",
+      "reponse3": "Un angle obtus",
+      "reponse4": "Un angle droit",
+      "reponse": "Un angle aïgu"
+    },
+    {
+      "question": "Il y a 6 ans, Edouard avait 2 fois l'âge de Lise. Dans 5 ans, ils auront 40 ans à eux 2. Quel est l'âge de Lise ?",
+      "reponse1": "10 Ans",
+      "reponse2": "11 Ans",
+      "reponse3": "12 Ans",
+      "reponse4": "13 ans",
+      "reponse": "12 Ans"
+    },
+    {
+      "question": "Dans 20 ans, tu auras le carré de ton âge actuel. Quel âge as-tu?",
+      "reponse1": "3",
+      "reponse2": "4",
+      "reponse3": "5",
+      "reponse4": "6",
+      "reponse": "5"
+    },
+
+    {
+      "question": "Ma soeur a autant de frères que de soeur. Mon frère a deux fois plus de soeurs que de frères. Combien y a-t-il d'enfants dans la famille?",
+      "reponse1": "5 enfants",
+      "reponse2": "6 enfants",
+      "reponse3": "7 enfants",
+      "reponse4": "8 enfants",
+      "reponse": "7 enfants"
+    },
+    {
+      "question": "Que vaut le quart de la moitié du double de 32?",
+      "reponse1": "4",
+      "reponse2": "8",
+      "reponse3": "16",
+      "reponse4": "32",
+      "reponse": "8"
+    },
+    {
+      "question": "J'ai actuellement trois ans de plus que toi. Dans combien d'années aurais-je 5 ans de plus que toi?",
+      "reponse1": "1",
+      "reponse2": "2",
+      "reponse3": "5",
+      "reponse4": "Jamais",
+      "reponse": "Jamais"
+    },
+    {
+      "question": "Un cahier et un stylo coûtent ensemble 1,50€. Le stylo coûte 0,40€ de moins que le cahier. Combien coûte le cahier?",
+      "reponse1": "0.75€",
+      "reponse2": "0.80€",
+      "reponse3": "0.95€",
+      "reponse4": "1€",
+      "reponse": "0.95€"
+    },
+    {
+      "question": "Dans une école de 273 éleves, combien d'équipes de cinq joueurs pourra-t-on former simultanément?",
+      "reponse1": "51",
+      "reponse2": "52",
+      "reponse3": "54",
+      "reponse4": "58",
+      "reponse": "54"
+    }
+  ],
+  [
+    {
+      "question": "Comment s'appelait la femme de Louis XVI ?",
+      "reponse1": "Marie-Joel",
+      "reponse2": "Marie-Thérèse",
+      "reponse3": "Marie-Antoinette",
+      "reponse4": "Marie-Patrick",
+      "reponse": "Marie-Antoinette"
+    },
+    {
+      "question": "Combien mesure la Tour-Eiffel ?",
+      "reponse1": "221 mètres",
+      "reponse2": "327 mètres",
+      "reponse3": "400 mètres",
+      "reponse4": "560 mètres",
+      "reponse": "327 mètres"
+    },
+    {
+      "question": "Comment s'appelle l'hymne de la France ?",
+      "reponse1": "La Lyonnaise",
+      "reponse2": "La Nordiste",
+      "reponse3": "La Marseillaise",
+      "reponse4": "La Parisienne",
+      "reponse": "La"
+    },
+    {
+      "question": "Qui a chanté la \"Marseillaise\" en premier ?",
+      "reponse1": "Un soldat",
+      "reponse2": "Un enfant",
+      "reponse3": "Un marocain",
+      "reponse4": "Le roi de France",
+      "reponse": "Un enfant"
+    },
+
+    {
+      "question": "Quand a été guillotiné Louis XVI ?",
+      "reponse1": "Le 21 janvier 1793",
+      "reponse2": "Le 14 juillet 1794",
+      "reponse3": "Le 21 juillet 1793",
+      "reponse4": "Le 03 janvier 2001",
+      "reponse": "Le 21 janvier 1793"
+    },
+    {
+      "question": "Quelles a été les premières choses apparues sur Terre ?",
+      "reponse1": "L'homme",
+      "reponse2": "Les pizzas",
+      "reponse3": "Les dinosaures",
+      "reponse4": "Les micro-organismes",
+      "reponse": "Les micro-organismes"
+    },
+    {
+      "question": "Quelles sont les dates de début et fin de la 2ème Guerre Mondiale ? ",
+      "reponse1": "Juillet 38-Juillet 44",
+      "reponse2": "Septembre 39-Septembre 45",
+      "reponse3": "Septembre 39-Mai 45",
+      "reponse4": "Janvier 38-Janvier 45",
+      "reponse": "Septembre 39-Septembre 45"
+    },
+    {
+      "question": "Quels sont les pays amis de l'Allemagne nazie ?",
+      "reponse1": "France-Roumanie-Islande-Portugal",
+      "reponse2": "Italie-Islande-Slovaquie-France",
+      "reponse3": "Italie-Bulgarie-Croatie-Hongrie",
+      "reponse4": "Algerie-Israël-Australie-Belgique",
+      "reponse": "Italie-Bulgarie-Croatie-Hongrie"
+    },
+    {
+      "question": "Comment s'appelait la bombe atomique lâchée sur Nagasaki ?",
+      "reponse1": "Big Mama",
+      "reponse2": "Big Dude",
+      "reponse3": "Little Boy",
+      "reponse4": "Fat Man",
+      "reponse": "Fat Man"
+    }
+  ],
+  [
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "s",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "D",
+      "reponse": ""
+    },
+
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    }
+  ],
+
+  [
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "s",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "D",
+      "reponse": ""
+    },
+
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    }
+  ],
+  [
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "s",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "D",
+      "reponse": ""
+    },
+
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    }
+  ],
+
+  [
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "s",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "D",
+      "reponse": ""
+    },
+
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    }
+  ],
+  [
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "s",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "D",
+      "reponse": ""
+    },
+
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    },
+    {
+      "question": "",
+      "reponse1": "",
+      "reponse2": "",
+      "reponse3": "",
+      "reponse4": "",
+      "reponse": ""
+    }
   ]
 ]

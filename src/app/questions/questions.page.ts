@@ -138,6 +138,18 @@ export class QuestionsPage implements OnInit {
         this.themeId = 5;
         this.getRandomQuiz(this.theme);
         break;
+        case "math":
+        titre.html(`Math`);
+        this.theme = this.tableauGeneral[6];
+        this.themeId = 6;
+        this.getRandomQuiz(this.theme);
+        break;
+        case "histoire":
+        titre.html(`Histoire`);
+        this.theme = this.tableauGeneral[7];
+        this.themeId = 7;
+        this.getRandomQuiz(this.theme);
+        break;
       default:
         break;
     }
@@ -168,7 +180,7 @@ export class QuestionsPage implements OnInit {
       this.route.navigateByUrl("/resultat/" + this.score);
     }
 
-    if (this.nbQuestion == 5) {
+    if (this.nbQuestion > 5) {
       clearInterval(this.interval);
     }
   }

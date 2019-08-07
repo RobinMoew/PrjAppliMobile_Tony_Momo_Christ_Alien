@@ -29,5 +29,10 @@ export class CategoriesPage implements OnInit {
   openQuizSinok() {
     this.router.navigateByUrl('/questions/sinok');
   }
- 
+  openQuizmath() {
+    this.router.navigateByUrl('/questions/math');
+  }
+  openQuizhistoire() {
+    this.router.navigateByUrl('/questions/histoire');
+  }
 }
