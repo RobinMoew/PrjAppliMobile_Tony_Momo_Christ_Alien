@@ -430,7 +430,7 @@
       "reponse": "12 Ans"
     },
     {
-      "question": "Dans 20 ans, tu auras le carré de ton âge actuel. Quel âge as-tu?",
+      "question": "Dans 20 ans, tu auras le carré de ton âge actuel. Quel âge as-tu ?",
       "reponse1": "3",
       "reponse2": "4",
       "reponse3": "5",
@@ -439,7 +439,7 @@
     },
 
     {
-      "question": "Ma soeur a autant de frères que de soeur. Mon frère a deux fois plus de soeurs que de frères. Combien y a-t-il d'enfants dans la famille?",
+      "question": "Ma soeur a autant de frères que de soeur. Mon frère a deux fois plus de soeurs que de frères. Combien y a-t-il d'enfants dans la famille ?",
       "reponse1": "5 enfants",
       "reponse2": "6 enfants",
       "reponse3": "7 enfants",
@@ -447,7 +447,7 @@
       "reponse": "7 enfants"
     },
     {
-      "question": "Que vaut le quart de la moitié du double de 32?",
+      "question": "Que vaut le quart de la moitié du double de 32 ?",
       "reponse1": "4",
       "reponse2": "8",
       "reponse3": "16",
@@ -455,7 +455,7 @@
       "reponse": "8"
     },
     {
-      "question": "J'ai actuellement trois ans de plus que toi. Dans combien d'années aurais-je 5 ans de plus que toi?",
+      "question": "J'ai actuellement trois ans de plus que toi. Dans combien d'années aurais-je 5 ans de plus que toi ?",
       "reponse1": "1",
       "reponse2": "2",
       "reponse3": "5",
@@ -463,7 +463,7 @@
       "reponse": "Jamais"
     },
     {
-      "question": "Un cahier et un stylo coûtent ensemble 1,50€. Le stylo coûte 0,40€ de moins que le cahier. Combien coûte le cahier?",
+      "question": "Un cahier et un stylo coûtent ensemble 1,50€. Le stylo coûte 0,40€ de moins que le cahier. Combien coûte le cahier ?",
       "reponse1": "0.75€",
       "reponse2": "0.80€",
       "reponse3": "0.95€",
@@ -471,7 +471,7 @@
       "reponse": "0.95€"
     },
     {
-      "question": "Dans une école de 273 éleves, combien d'équipes de cinq joueurs pourra-t-on former simultanément?",
+      "question": "Dans une école de 273 éleves, combien d'équipes de cinq joueurs pourra-t-on former simultanément ?",
       "reponse1": "51",
       "reponse2": "52",
       "reponse3": "54",
