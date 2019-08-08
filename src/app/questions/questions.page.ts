@@ -150,6 +150,12 @@ export class QuestionsPage implements OnInit {
         this.themeId = 7;
         this.getRandomQuiz(this.theme);
         break;
+        case "capitale":
+        titre.html(`Capitale`);
+        this.theme = this.tableauGeneral[8];
+        this.themeId = 8;
+        this.getRandomQuiz(this.theme);
+        break;
       default:
         break;
     }
