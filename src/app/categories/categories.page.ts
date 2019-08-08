@@ -35,4 +35,7 @@ export class CategoriesPage implements OnInit {
   openQuizhistoire() {
     this.router.navigateByUrl('/questions/histoire');
   }
+  openQuizcapitale() {
+    this.router.navigateByUrl('/questions/capitale');
+  }
 }
