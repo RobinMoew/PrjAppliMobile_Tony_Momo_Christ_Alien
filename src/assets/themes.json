@@ -566,7 +566,7 @@
   },
   {
       "question" :"Quelle est la capitale de Madagascar",
-     "question" : "Mad-City",
+     "reponse1" : "Mad-City",
      "reponse2" : "Agascar-Town",
      "reponse3" : "Andapa",
      "reponse4" : "Antananarivo",
