@@ -10,13 +10,14 @@
       </div>
 
       <div class="txtb">
-        <input class="" type="password" id="password" />
+        <input class="" [(ngModel)]="inputPass" type="password" id="password" />
         <span data-placeholder="Mot de passe"></span>
       </div>
 
-      <button class="btn">Se connecter</button>
+      <button id="login" class="btn">Se connecter</button>
 
-      <div class="bottom-text">Pas encore de compte? <br> Inscrivez-vous!<a [routerLink]="['/register']"> S'inscrire</a></div>
+      <div class="bottom-text">Pas encore de compte? <br> Inscrivez-vous!<a [routerLink]="['/register']"> S'inscrire</a>
+      </div>
     </div>
   </div>
 </ion-content>
