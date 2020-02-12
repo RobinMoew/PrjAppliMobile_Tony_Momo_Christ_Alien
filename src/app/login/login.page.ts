@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController, AlertController } from '@ionic/angular';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +11,12 @@ export class LoginPage implements OnInit {
   inputEmail: string;
   inputPass: string;
 
-  constructor() {}
+  constructor(
+    public router: ActivatedRoute,
+    public navCtrl: NavController,
+    public route: Router,
+    public alertController: AlertController
+  ) {}
 
   ngOnInit() {
     const context = this;
@@ -23,7 +30,7 @@ export class LoginPage implements OnInit {
       }
     });
 
-    $('#login_btn').on('click', function() {
+    $('#login_btn').on('click', () => {
       $.ajax({
         url: 'https://localhost:8000/log_in',
         type: 'POST',
@@ -32,12 +39,30 @@ export class LoginPage implements OnInit {
           password: context.inputPass
         },
         success: result => {
-          console.log(result.message);
+          if (result.success != false) {
+            this.logIn();
+          } else {
+            this.presentAlert(result.message);
+          }
         },
         error: error => {
           console.log(error);
         }
       });
     });
+  }
+
+  logIn() {
+    this.route.navigateByUrl('categories');
+  }
+
+  async presentAlert(message) {
+    const alert = await this.alertController.create({
+      header: 'Alerte',
+      message: message,
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 }

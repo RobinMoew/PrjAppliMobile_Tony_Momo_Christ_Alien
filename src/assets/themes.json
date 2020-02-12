@@ -1,6 +1,5 @@
 [
-  [
-    {
+  [{
       "question": "Selectionner la balise orpheline:",
       "reponse1": "<img>",
       "reponse2": "<h1>",
@@ -73,8 +72,7 @@
       "reponse": "Pour diminuer le nombre de requêtes envoyées au serveur"
     }
   ],
-  [
-    {
+  [{
       "question": "Que signifie PHP ?",
       "reponse1": "Page Helper Process",
       "reponse2": "Programming Home Pages",
@@ -139,8 +137,7 @@
       "reponse": "post"
     }
   ],
-  [
-    {
+  [{
       "question": "Quel est le nom de l'institution où a été créé le web ?",
       "reponse1": "IRIS",
       "reponse2": "CIL",
@@ -205,8 +202,7 @@
       "reponse": "Le protocole Web"
     }
   ],
-  [
-    {
+  [{
       "question": "JavaScript est un language qui:",
       "reponse1": "Doit être compilé avant d'être exécuté",
       "reponse2": "S'exécute côté client",
@@ -271,8 +267,7 @@
       "reponse": "$(\"li\").addClass(\".actif\");"
     }
   ],
-  [
-    {
+  [{
       "question": "Angular est un framework orienté …",
       "reponse1": "composants",
       "reponse2": "modules",
@@ -329,8 +324,7 @@
       "reponse": "Le module racine"
     }
   ],
-  [
-    {
+  [{
       "question": "Quel est le MMORPG le plus joué ?",
       "reponse1": "Guild War",
       "reponse2": "World of Warcraft",
@@ -404,8 +398,7 @@
       "reponse": "Chocolat"
     }
   ],
-  [
-    {
+  [{
       "question": "A quel nombre décimal est égal à 3/6 + 6/3 ?",
       "reponse1": "2.5",
       "reponse2": "3.5",
@@ -479,8 +472,7 @@
       "reponse": "54"
     }
   ],
-  [
-    {
+  [{
       "question": "Comment s'appelait la femme de Louis XVI ?",
       "reponse1": "Marie-Joel",
       "reponse2": "Marie-Thérèse",
@@ -554,301 +546,77 @@
       "reponse": "Fat Man"
     }
   ],
-  [
-    {
-      "question" :"Quelle est la capitale du Canada",
-     "reponse1" : "Montréal",
-     "reponse2" : "Toronto",
-     "reponse3" : "Euphor",
-     "reponse4" : "Ottawa",
-     "reponse" : "Ottawa"
- 
-  },
-  {
-      "question" :"Quelle est la capitale de Madagascar",
-     "reponse1" : "Mad-City",
-     "reponse2" : "Agascar-Town",
-     "reponse3" : "Andapa",
-     "reponse4" : "Antananarivo",
-     "reponse" : "Antananarivo"
- 
-  },
-  {
-      "question":"Quelle est la capitale de l'Australie",
-     "reponse1" : "Sidney",
-     "reponse2" : "Cambéra",
-     "reponse3" : "Dol Guldur",
-    "reponse4" : "Melbourne",
-     "reponse" : "Cambéra"
- 
-  },
-  {
-      "question" :"Quelle est la capitale du Portugal",
-     "reponse1" : "Lisonne",
-     "reponse2" : "Aldorande",
-     "reponse3" : "Porto",
-     "reponse4" : "Braga",
-     "reponse" : "Lisonne"
- 
-  },
-  {
-      "question" :"Quelle est la capitale du Botswana",
-  "reponse1" : "Tatouine",
-  "reponse2" : "Windhoek",
-  "reponse3" : "Gaborone",
-  "reponse4" : "Kalahari",
-  "reponse" : "Gaborone"
- 
- },
- {
-     "question" :"Quelle est la capitale de l'islande",
-  "reponse1" : "Tatouine",
-  "reponse2" : "Reykjavik",
-  "reponse3" : "Oslo",
-  "reponse4" : "Asgarde",
-  "reponse" : "Reykjavik"
- 
- },
- {
-     "question" :"Quelle est la capitale de la Birmanie",
-  "reponse1" : "Naypyidaw",
-  "reponse2" : "Yangoon",
-  "reponse3" : "Kanchanabury",
-  "reponse4" : "Pandora",
-  "reponse" : "Naypyidaw"
- 
- },
- {
-     "question" :"Quelle est la capitale de la Colombie",
-  "reponse1" : "Alkali Lake",
-  "reponse2" : "Narco",
-  "reponse3" : "Bogota",
-  "reponse4" : "Lima",
-  "reponse" : "Bogota"
- 
- }
-  ],
-  [
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
+  [{
+      "question": "Quelle est la capitale du Canada",
+      "reponse1": "Montréal",
+      "reponse2": "Toronto",
+      "reponse3": "Euphor",
+      "reponse4": "Ottawa",
+      "reponse": "Ottawa"
 
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
     },
     {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
+      "question": "Quelle est la capitale de Madagascar",
+      "reponse1": "Mad-City",
+      "reponse2": "Agascar-Town",
+      "reponse3": "Andapa",
+      "reponse4": "Antananarivo",
+      "reponse": "Antananarivo"
+
     },
     {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
+      "question": "Quelle est la capitale de l'Australie",
+      "reponse1": "Sidney",
+      "reponse2": "Cambéra",
+      "reponse3": "Dol Guldur",
+      "reponse4": "Melbourne",
+      "reponse": "Cambéra"
+
     },
     {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
+      "question": "Quelle est la capitale du Portugal",
+      "reponse1": "Lisonne",
+      "reponse2": "Aldorande",
+      "reponse3": "Porto",
+      "reponse4": "Braga",
+      "reponse": "Lisonne"
+
     },
     {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    }
-  ],
-  [
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
+      "question": "Quelle est la capitale du Botswana",
+      "reponse1": "Tatouine",
+      "reponse2": "Windhoek",
+      "reponse3": "Gaborone",
+      "reponse4": "Kalahari",
+      "reponse": "Gaborone"
+
     },
     {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
+      "question": "Quelle est la capitale de l'islande",
+      "reponse1": "Tatouine",
+      "reponse2": "Reykjavik",
+      "reponse3": "Oslo",
+      "reponse4": "Asgarde",
+      "reponse": "Reykjavik"
+
     },
     {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
+      "question": "Quelle est la capitale de la Birmanie",
+      "reponse1": "Naypyidaw",
+      "reponse2": "Yangoon",
+      "reponse3": "Kanchanabury",
+      "reponse4": "Pandora",
+      "reponse": "Naypyidaw"
+
     },
     {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    }
-  ],
-  [
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "s",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "D",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
-    },
-    {
-      "question": "",
-      "reponse1": "",
-      "reponse2": "",
-      "reponse3": "",
-      "reponse4": "",
-      "reponse": ""
+      "question": "Quelle est la capitale de la Colombie",
+      "reponse1": "Alkali Lake",
+      "reponse2": "Narco",
+      "reponse3": "Bogota",
+      "reponse4": "Lima",
+      "reponse": "Bogota"
+
     }
   ]
 ]
