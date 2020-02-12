@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
-import { Router, ActivatedRoute } from '@angular/router';
+import { AjaxService } from '../services/Ajax/ajax.service';
 
 @Component({
   selector: 'app-register',
@@ -12,11 +11,7 @@ export class RegisterPage implements OnInit {
   inputPass: string;
   inputCPass: string;
 
-  constructor(
-    public router: ActivatedRoute,
-    public navCtrl: NavController,
-    public route: Router
-  ) {}
+  constructor(public ajax: AjaxService) {}
 
   ngOnInit() {
     const context = this;
@@ -31,29 +26,13 @@ export class RegisterPage implements OnInit {
     });
 
     $('#signin').on('click', () => {
-      $.ajax({
-        url: 'https://localhost:8000/sign_in',
-        type: 'POST',
-        data: {
-          email: context.inputEmail,
-          password: context.inputPass,
-          c_password: context.inputCPass
-        },
-        success: result => {
-          if (result.success != false) {
-            this.signIn();
-          } else {
-            console.log(result.message);
-          }
-        },
-        error: error => {
-          console.log(error);
-        }
-      });
-    });
-  }
+      let data = {
+        email: context.inputEmail,
+        password: context.inputPass,
+        c_password: context.inputCPass
+      };
 
-  signIn() {
-    this.route.navigateByUrl('login');
+      this.ajax.ajax('sign_in', data, 'login');
+    });
   }
 }
