@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-login',
@@ -24,10 +23,7 @@ export class LoginPage implements OnInit {
       }
     });
 
-    $('#login').on('click', function() {
-      console.log(context.inputEmail);
-      console.log(context.inputPass);
-
+    $('#login_btn').on('click', function() {
       $.ajax({
         url: 'https://localhost:8000/log_in',
         type: 'POST',
