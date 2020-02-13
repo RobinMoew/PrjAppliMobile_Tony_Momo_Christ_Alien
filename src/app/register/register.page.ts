@@ -32,7 +32,7 @@ export class RegisterPage implements OnInit {
         c_password: context.inputCPass
       };
 
-      this.ajax.ajax('sign_in', data, 'login');
+      this.ajax.ajax('sign_in', data);
     });
   }
 }
