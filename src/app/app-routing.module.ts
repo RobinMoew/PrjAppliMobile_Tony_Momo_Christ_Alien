@@ -23,7 +23,8 @@ const routes: Routes = [
   {
     path: 'resultat/:score',
     loadChildren: './resultat/resultat.module#ResultatPageModule'
-  }
+  },
+  { path: 'admin', loadChildren: './admin/admin.module#AdminPageModule' }
 ];
 
 @NgModule({
