@@ -101,7 +101,7 @@ export class QuestionsPage implements OnInit {
     const titre = $("#cat_quest");
     this.timer();
 
-    switch (themeName) {
+/*     switch (themeName) {
       case "html":
         titre.html(`HTML / CSS`);
         this.theme = this.tableauGeneral[0];
@@ -158,7 +158,7 @@ export class QuestionsPage implements OnInit {
         break;
       default:
         break;
-    }
+    } */
   }
 
   ngOnInit() {
