@@ -1,13 +1,12 @@
-import { Component, OnInit } from "@angular/core";
-import { Router, ActivatedRoute } from "@angular/router";
-import * as $ from "jquery";
-import { NavController } from "@ionic/angular";
-import { interval } from "rxjs";
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import * as $ from 'jquery';
+import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: "app-questions",
-  templateUrl: "./questions.page.html",
-  styleUrls: ["./questions.page.scss"]
+  selector: 'app-questions',
+  templateUrl: './questions.page.html',
+  styleUrls: ['./questions.page.scss']
 })
 export class QuestionsPage implements OnInit {
   constructor(
@@ -15,8 +14,8 @@ export class QuestionsPage implements OnInit {
     public navCtrl: NavController,
     public route: Router
   ) {}
-  tableauGeneral = [];
 
+  tableauGeneral = [];
   theme: Array<object>;
   themeId = 0;
   rand = 0;
@@ -71,37 +70,37 @@ export class QuestionsPage implements OnInit {
           this.getRandomQuiz(this.theme);
         } else {
           clearInterval(this.interval);
-          this.route.navigateByUrl("/resultat/" + this.score);
+          this.route.navigateByUrl('/resultat/' + this.score);
         }
       }
     }, 10);
   }
 
   recupDataJson() {
-    let context = this;
     $.ajax({
-      url: "../../assets/themes.json",
-      success: function success(result) {
-        context.startQuizz(result);
+      url: 'https://localhost:8000/getThemes',
+      type: 'GET',
+      success: result => {
+        this.theme = result;
       },
-      error: function error(result) {
-        console.log(result.responseText);
+      error: error => {
+        console.log(error);
       }
     });
   }
 
   startQuizz(themes) {
-    if (typeof themes == "string") {
+    if (typeof themes == 'string') {
       this.tableauGeneral = JSON.parse(themes);
     } else {
       this.tableauGeneral = themes;
     }
 
-    const themeName = this.router.snapshot.paramMap.get("theme");
-    const titre = $("#cat_quest");
+    const themeName = this.router.snapshot.paramMap.get('theme');
+    const titre = $('#cat_quest');
     this.timer();
 
-/*     switch (themeName) {
+    /*     switch (themeName) {
       case "html":
         titre.html(`HTML / CSS`);
         this.theme = this.tableauGeneral[0];
@@ -183,7 +182,7 @@ export class QuestionsPage implements OnInit {
       this.nbQuestion++;
       this.getRandomQuiz(this.theme);
     } else {
-      this.route.navigateByUrl("/resultat/" + this.score);
+      this.route.navigateByUrl('/resultat/' + this.score);
     }
 
     if (this.nbQuestion > 5) {
