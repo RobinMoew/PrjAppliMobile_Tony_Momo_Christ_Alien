@@ -10,19 +10,10 @@
           {{ this.tableauGeneral[this.themeId][this.rand].question }}
         </div>
 
-        <button class="btn" (click)="onReponseClick($event)">
-          {{ this.tableauGeneral[this.themeId][this.rand].reponse1 }}
+        <button *ngFor="let response of this.tableauGeneral[this.themeId][this.rand].responses; index as i;" class="btn"
+          (click)="onReponseClick($event)">
+          {{ response }}
         </button>
-        <button class="btn" (click)="onReponseClick($event)">
-          {{ this.tableauGeneral[this.themeId][this.rand].reponse2 }}
-        </button>
-        <button class="btn" (click)="onReponseClick($event)">
-          {{ this.tableauGeneral[this.themeId][this.rand].reponse3 }}
-        </button>
-        <button class="btn" (click)="onReponseClick($event)">
-          {{ this.tableauGeneral[this.themeId][this.rand].reponse4 }}
-        </button>
-        
       </div>
     </div>
     <timer></timer>

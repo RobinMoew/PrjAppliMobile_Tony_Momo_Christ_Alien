@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as $ from 'jquery';
 import { NavController } from '@ionic/angular';
+import { QuizService } from '../services/Quiz/quiz.service';
 
 @Component({
   selector: 'app-questions',
@@ -12,8 +13,11 @@ export class QuestionsPage implements OnInit {
   constructor(
     public router: ActivatedRoute,
     public navCtrl: NavController,
-    public route: Router
-  ) {}
+    public route: Router,
+    public quiz: QuizService
+  ) {
+    this.tableauGeneral = quiz.themes;
+  }
 
   tableauGeneral = [];
   theme: Array<object>;
@@ -25,21 +29,11 @@ export class QuestionsPage implements OnInit {
   value = 1;
   interval: any;
 
-  /*   getRandomTheme() {
-    return this.tableauGeneral[
-      Math.floor(Math.random() * this.tableauGeneral.length)
-    ];
+  getRandomQuestionId(theme) {
+    return Math.floor(Math.random() * theme.questions);
   }
 
-  getRandomThemeId() {
-    return Math.floor(Math.random() * this.tableauGeneral.length);
-  } */
-
-  getRandomQuestionId(theme: Array<object>) {
-    return Math.floor(Math.random() * theme.length);
-  }
-
-  getRandomQuiz(theme: Array<object>) {
+  getRandomQuiz(theme) {
     const questionId = this.getRandomQuestionId(theme);
 
     if (this.alreadyShow(questionId)) {
@@ -67,7 +61,7 @@ export class QuestionsPage implements OnInit {
         this.value = 1;
         if (this.nbQuestion < 5) {
           this.nbQuestion++;
-          this.getRandomQuiz(this.theme);
+          this.getRandomQuiz(this.getTheme());
         } else {
           clearInterval(this.interval);
           this.route.navigateByUrl('/resultat/' + this.score);
@@ -76,101 +70,22 @@ export class QuestionsPage implements OnInit {
     }, 10);
   }
 
-  recupDataJson() {
-    $.ajax({
-      url: 'https://localhost:8000/getThemes',
-      type: 'GET',
-      success: result => {
-        this.theme = result;
-      },
-      error: error => {
-        console.log(error);
-      }
-    });
-  }
-
-  startQuizz(themes) {
-    if (typeof themes == 'string') {
-      this.tableauGeneral = JSON.parse(themes);
-    } else {
-      this.tableauGeneral = themes;
-    }
-
-    const themeName = this.router.snapshot.paramMap.get('theme');
-    const titre = $('#cat_quest');
-    this.timer();
-
-    /*     switch (themeName) {
-      case "html":
-        titre.html(`HTML / CSS`);
-        this.theme = this.tableauGeneral[0];
-        this.themeId = 0;
-        this.getRandomQuiz(this.theme);
-        break;
-      case "php":
-        titre.html(`PHP`);
-        this.theme = this.tableauGeneral[1];
-        this.themeId = 1;
-        this.getRandomQuiz(this.theme);
-        break;
-      case "web":
-        titre.html(`Histoire du Web`);
-        this.theme = this.tableauGeneral[2];
-        this.themeId = 2;
-        this.getRandomQuiz(this.theme);
-        break;
-      case "js":
-        titre.html(`JavaScript`);
-        this.theme = this.tableauGeneral[3];
-        this.themeId = 3;
-        this.getRandomQuiz(this.theme);
-        break;
-      case "angular":
-        titre.html(`Angular`);
-        this.theme = this.tableauGeneral[4];
-        this.themeId = 4;
-        this.getRandomQuiz(this.theme);
-        break;
-      case "sinok":
-        titre.html(`Geek`);
-        this.theme = this.tableauGeneral[5];
-        this.themeId = 5;
-        this.getRandomQuiz(this.theme);
-        break;
-        case "math":
-        titre.html(`Math`);
-        this.theme = this.tableauGeneral[6];
-        this.themeId = 6;
-        this.getRandomQuiz(this.theme);
-        break;
-        case "histoire":
-        titre.html(`Histoire`);
-        this.theme = this.tableauGeneral[7];
-        this.themeId = 7;
-        this.getRandomQuiz(this.theme);
-        break;
-        case "capitale":
-        titre.html(`Capitale`);
-        this.theme = this.tableauGeneral[8];
-        this.themeId = 8;
-        this.getRandomQuiz(this.theme);
-        break;
-      default:
-        break;
-    } */
-  }
-
   ngOnInit() {
-    this.recupDataJson();
+    this.themeId = parseInt(this.router.snapshot.paramMap.get('idTheme')) - 1;
+    this.timer();
   }
 
   ionViewWillLeave() {
     clearInterval(this.interval);
   }
 
+  getTheme() {
+    return this.tableauGeneral[this.themeId];
+  }
+
   onReponseClick($event: any) {
     const reponse = $event.srcElement.innerText; // Valeur du bouton cliqué
-    const trueRep = this.tableauGeneral[this.themeId][this.rand].reponse;
+    const trueRep = this.tableauGeneral[this.themeId][this.rand].goodAnswer;
     this.randoms.push(this.rand);
     this.value = 1;
 
@@ -180,7 +95,7 @@ export class QuestionsPage implements OnInit {
 
     if (this.nbQuestion < 5) {
       this.nbQuestion++;
-      this.getRandomQuiz(this.theme);
+      this.getRandomQuiz(this.getTheme());
     } else {
       this.route.navigateByUrl('/resultat/' + this.score);
     }

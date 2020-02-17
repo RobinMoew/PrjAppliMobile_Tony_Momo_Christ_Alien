@@ -17,7 +17,7 @@ const routes: Routes = [
     loadChildren: './categories/categories.module#CategoriesPageModule'
   },
   {
-    path: 'questions/:theme',
+    path: 'questions/:idTheme',
     loadChildren: './questions/questions.module#QuestionsPageModule'
   },
   {

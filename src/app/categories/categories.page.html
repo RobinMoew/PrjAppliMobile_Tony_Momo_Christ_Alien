@@ -4,36 +4,10 @@
     <div id="categories" class="container">
       <h1 id="title">Catégories</h1>
       <div id="buttons">
-        <button (click)="openQuizHtml()" id="html">
-          <img src="https://pixees.fr/wp-content/uploads/2015/11/david_roche_dr_12-300x300.png" alt="" />
-        </button>
-        <button (click)="openQuizJs()" id="js">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
-            alt="" />
-        </button>
-        <button (click)="openQuizWeb()" id="webstory">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/GNOME_Web_logo.png" alt="" />
-        </button>
-        <button (click)="openQuizPhp()" id="php">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1280px-PHP-logo.svg.png"
-            alt="" />
-        </button>
-        <button (click)="openQuizAngular()" id="angular">
-          <img src="https://angular.io/assets/images/logos/angular/angular.png" alt="" />
-        </button>
-        <button (click)="openQuizSinok()" id="sinok">
-          <img src="https://risibank.fr/cache/stickers/d509/50929-full.png" alt="" />
-        </button>
-        <button (click)="openQuizmath()" id="math">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/61UcMRHyZ4L.png" alt="" />
-        </button>
-        <button (click)="openQuizhistoire()" id="histoire">
-          <img src="https://cdn.pixabay.com/photo/2014/09/14/10/20/teal-444813_960_720.png" alt="" />
-        </button>
-        <button (click)="openQuizcapitale()" id="capitale">
-          <img src="https://www.freepngimg.com/thumb/globe/41485-2-geography-png-image-high-quality.png" alt="" />
-        </button>
+        <div *ngFor="let theme of quiz.themes; index as i;">
+          <img src="{{theme.image}}" alt="{{theme.title}}" (click)=openQuiz(theme.id)>
+          <span (click)=openQuiz(theme.id)>{{theme.title}}</span>
+        </div>
       </div>
     </div>
   </div>

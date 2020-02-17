@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AjaxService } from '../services/Ajax/ajax.service';
+import { QuizService } from '../services/Quiz/quiz.service';
 
 @Component({
   selector: 'app-categories',
@@ -8,9 +9,14 @@ import { AjaxService } from '../services/Ajax/ajax.service';
   styleUrls: ['./categories.page.scss']
 })
 export class CategoriesPage implements OnInit {
-  constructor(public router: Router, public ajax: AjaxService) {}
+  constructor(
+    public router: Router,
+    public ajax: AjaxService,
+    public quiz: QuizService
+  ) {}
 
   ngOnInit() {
+    console.log('COUCOU');
     $('#disconnect').click(() => {
       let data = {
         id: localStorage.getItem('id'),
@@ -18,33 +24,20 @@ export class CategoriesPage implements OnInit {
       };
       this.ajax.ajax('logout', data);
     });
+
+    $.ajax({
+      url: 'https://localhost:8000/getThemes',
+      type: 'GET',
+      success: result => {
+        this.quiz.themes = result.themes;
+      },
+      error: error => {
+        console.log(error);
+      }
+    });
   }
 
-  openQuizHtml() {
-    this.router.navigateByUrl('/questions/html');
-  }
-  openQuizJs() {
-    this.router.navigateByUrl('/questions/js');
-  }
-  openQuizWeb() {
-    this.router.navigateByUrl('/questions/web');
-  }
-  openQuizPhp() {
-    this.router.navigateByUrl('/questions/php');
-  }
-  openQuizAngular() {
-    this.router.navigateByUrl('/questions/angular');
-  }
-  openQuizSinok() {
-    this.router.navigateByUrl('/questions/sinok');
-  }
-  openQuizmath() {
-    this.router.navigateByUrl('/questions/math');
-  }
-  openQuizhistoire() {
-    this.router.navigateByUrl('/questions/histoire');
-  }
-  openQuizcapitale() {
-    this.router.navigateByUrl('/questions/capitale');
+  openQuiz(themeId) {
+    this.router.navigateByUrl('/questions/' + themeId);
   }
 }
