@@ -72,6 +72,7 @@ export class QuestionsPage implements OnInit {
 
   ngOnInit() {
     this.themeId = parseInt(this.router.snapshot.paramMap.get('idTheme')) - 1;
+    this.getRandomQuiz(this.getTheme());
     this.timer();
   }
 
