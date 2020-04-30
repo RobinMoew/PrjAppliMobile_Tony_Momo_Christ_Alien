@@ -31,7 +31,7 @@
     "cordova-plugin-music-controls": "^2.2.0",
     "cordova-plugin-nativeaudio": "^3.0.9",
     "core-js": "^2.6.11",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "natives": "^1.1.6",
     "rxjs": "^6.5.4",
     "tslib": "^1.9.0",
